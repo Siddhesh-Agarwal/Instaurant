@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock extrahead %}
+{% block title %}
+Instaurant
+{% endblock title %}
+{% block homeactive %} active {% endblock homeactive %}
+
+
+
+{% block content %}
+
+
+
+
+<div class="container heading my-5">
+    <h2>Welcome to Instaurant - Restaurant!!</h2>
+</div>
+
+
+<a href="/menu"><button type="button" class="order btn btn-outline-warning mx-5"> Order Now</button></a>
+
+
+
+<div class="container">
+    <div class="container-fluid mt-5">
+        <footer class="blog-footer">
+            <i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by <a class="myprofile"
+                href="https://www.siddhesh.tech">Siddhesh Agarwal</a>
+            <br>
+            <br>
+            <p class="copyright"> © 2023 Siddhesh Agarwal. All Rights Reserved </p>
+        </footer>
+    </div>
+    {% endblock content %}
