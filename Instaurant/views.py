@@ -59,7 +59,7 @@ def contact(request: HttpRequest) -> HttpResponse:
             messages.success(request, "Your message has been conveyed!!")
 
             subject = "Contact from AM-Blogs!!"
-            message = f"{contact.name} <{contact.email}> Instaurants {contact.content}"
+            message = f"{contact.name} <{contact.email}> said {contact.content}"
             from_email = settings.EMAIL_HOST_USER
             to_list = ["siddhesh.agarwal@gmail.com", "727721eucs144@skcet.ac.in"]
             send_mail(subject, message, from_email, to_list, fail_silently=True)
